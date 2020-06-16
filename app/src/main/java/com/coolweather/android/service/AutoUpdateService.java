@@ -54,7 +54,11 @@ public class AutoUpdateService extends Service {
             Weather weather = Utility.handleWeatherResponse(weatherString);
             String weatherId = weather.basic.weatherId;
             String weatherUrl = "http://guolin.tech/api/weather?cityid=" + weatherId
+<<<<<<< HEAD
                     + "&key=6ebfd087db8144cbaab3884bb8f4b19d"; // 注意此处替换为之前申请的 API Key
+=======
+                    + "&key=e4825c111a364483a35ef9c6ad6442cd"; // 注意此处替换为之前申请的 API Key
+>>>>>>> 622662e072dae2bdb907d2b55b82f41a0ee32e57
             HttpUtil.sendOkHttpRequest(weatherUrl, new Callback() {
                 @Override
                 public void onFailure(@NotNull Call call, @NotNull IOException e) {
@@ -94,4 +98,8 @@ public class AutoUpdateService extends Service {
             }
         });
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 622662e072dae2bdb907d2b55b82f41a0ee32e57
